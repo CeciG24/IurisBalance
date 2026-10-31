@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Derecho civil",
+    "items": [
+      "Asesoría y representación en juicios civiles.",
+      "Elaboración y revisión de contratos civiles.",
+      "Cumplimiento, rescisión y terminación de contratos.",
+      "Juicios de arrendamiento y desocupación de inmuebles.",
+      "Pólizas Jurídicas.",
+      "Cobro judicial y extrajudicial de adeudos.",
+      "Reclamación por daños y perjuicios.",
+      "Responsabilidad civil y reparación del daño.",
+      "Prescripción adquisitiva (usucapión).",
+      "Reivindicación y recuperación de bienes inmuebles.",
+      "Conflictos de propiedad, posesión y copropiedad.",
+      "Otorgamiento y firma de escrituras por vía judicial.",
+      "Cumplimiento de obligaciones y convenios.",
+      "Medios preparatorios a juicio.",
+      "Medios de impugnación y recursos legales."
+    ]
+  },
+  {
+    "name": "Derecho familiar",
+    "items": [
+      "Divorcio incausado.",
+      "Liquidación de la sociedad conyugal.",
+      "Separación de bienes y controversias patrimoniales familiares.",
+      "Reconocimiento de concubinato.",
+      "Pensión alimenticia: fijación, aumento, reducción y cancelación.",
+      "Guarda y custodia de niñas, niños y adolescentes.",
+      "Régimen de convivencia y visitas.",
+      "Reconocimiento e investigación de paternidad.",
+      "Desconocimiento de paternidad.",
+      "Patria potestad: suspensión, pérdida y recuperación.",
+      "Juicios sucesorios testamentarios e intestamentarios.",
+      "Elaboración de convenios familiares.",
+      "Rectificación de actas del Registro Civil por la vía procedente.",
+      "Adopción y procedimientos relacionados, conforme a la legislación aplicable.",
+      "Medidas de protección ante situaciones de violencia familiar.",
+      "Asesoría en restitución internacional de menores y asuntos de convivencia transfronteriza."
+    ]
+  },
+  {
+    "name": "Derecho laboral",
+    "items": [
+      "Asesoría y representación de trabajadores y patrones.",
+      "Despido injustificado.",
+      "Reinstalación laboral e indemnización constitucional.",
+      "Cálculo y reclamación de finiquitos y liquidaciones.",
+      "Reclamación de salarios y prestaciones adeudadas.",
+      "Pago de horas extraordinarias, vacaciones y prima vacacional.",
+      "Aguinaldo y prima de antigüedad.",
+      "Asesoría en renuncias y terminaciones de la relación laboral.",
+      "Elaboración y revisión de contratos individuales de trabajo.",
+      "Elaboración de convenios laborales.",
+      "Asesoría en conciliación prejudicial.",
+      "Representación ante los tribunales laborales.",
+      "Conflictos por riesgos de trabajo y prestaciones relacionadas.",
+      "Asesoría sobre reglamentos interiores de trabajo.",
+      "Prevención de conflictos y cumplimiento de obligaciones patronales.",
+      "Atención de asuntos relacionados con discriminación y hostigamiento laboral."
+    ]
+  },
+  {
+    "name": "Derecho penal",
+    "items": [
+      "Asesoría y defensa penal.",
+      "Representación de víctimas e imputados.",
+      "Elaboración y presentación de denuncias y querellas.",
+      "Acompañamiento ante el Ministerio Público.",
+      "Asistencia durante entrevistas y actos de investigación.",
+      "Defensa en audiencias iniciales y etapas del proceso penal.",
+      "Solicitud y revisión de medidas cautelares.",
+      "Atención de asuntos relacionados con lesiones.",
+      "Asesoría en delitos patrimoniales, como fraude, abuso de confianza y robo.",
+      "Asuntos relacionados con amenazas.",
+      "Representación de víctimas para la reparación integral del daño.",
+      "Solicitud de mecanismos alternativos de solución de controversias.",
+      "Asesoría en acuerdos reparatorios y suspensión condicional del proceso.",
+      "Impugnación de resoluciones y presentación de recursos.",
+      "Amparo en materia penal.",
+      "Asesoría sobre ejecución de sanciones y beneficios legales aplicables."
+    ]
+  },
+  {
+    "name": "Derecho mercantil",
+    "items": [
+      "Asesoría jurídica para empresas, comerciantes y emprendedores.",
+      "Elaboración y revisión de contratos mercantiles.",
+      "Cobranza extrajudicial y judicial.",
+      "Juicios ejecutivos mercantiles y orales mercantiles.",
+      "Cobro de pagarés, cheques y otros títulos de crédito.",
+      "Incumplimiento de obligaciones comerciales.",
+      "Controversias entre socios y accionistas.",
+      "Elaboración y revisión de convenios comerciales.",
+      "Asesoría en compraventa de bienes y prestación de servicios.",
+      "Reconocimiento y recuperación de adeudos.",
+      "Reclamaciones por incumplimiento contractual.",
+      "Asesoría en constitución y funcionamiento de sociedades mercantiles.",
+      "Elaboración y revisión de actas de asamblea y documentos corporativos.",
+      "Procedimientos concursales y asuntos relacionados con insolvencia.",
+      "Medios de impugnación y amparo en asuntos mercantiles."
+    ]
+  },
+  {
+    "name": "Elaboración y tramitación de juicios de amparo",
+    "items": [
+      "Elaboración y presentación de demandas de amparo indirecto.",
+      "Elaboración y presentación de demandas de amparo directo.",
+      "Suspensión del Acto reclamado.",
+      "Amparo contra actos de autoridades administrativas.",
+      "Amparo contra actos de autoridades judiciales.",
+      "Amparo contra leyes, reglamentos y normas generales.",
+      "Amparo contra omisiones de autoridades.",
+      "Amparo contra actos que vulneren derechos humanos.",
+      "Amparo en materia civil, familiar, laboral, penal y mercantil.",
+      "Amparo contra actos de autoridades municipales, estatales y federales.",
+      "Amparo contra actos de particulares en los supuestos previstos por la ley."
+    ]
+  },
+  {
+    "name": "Servicios jurídicos complementarios",
+    "items": [
+      "Consultoría jurídica preventiva: identificación de riesgos y orientación para prevenir conflictos legales.",
+      "Elaboración de documentos: contratos, convenios, escritos, requerimientos y contestaciones.",
+      "Revisión y análisis de expedientes: estudio de antecedentes, pruebas, plazos y alternativas procesales.",
+      "Negociación y solución de controversias: búsqueda de acuerdos extrajudiciales y mecanismos alternativos.",
+      "Amparo: análisis de procedencia y representación en asuntos de distintas materias.",
+      "Gestoría jurídica: seguimiento de trámites ante autoridades administrativas y judiciales, dentro del ámbito permitido.",
+      "Auditoría legal documental: revisión de contratos, obligaciones y documentación jurídica.",
+      "Asesoría a personas físicas y morales: atención a particulares, comerciantes, profesionistas y empresas.",
+      "Representación judicial y extrajudicial: defensa de intereses y seguimiento de asuntos ante las autoridades competentes.",
+      "Consultas jurídicas presenciales y a distancia: orientación inicial, evaluación de riesgos y definición de estrategias."
+    ]
+  }
+]

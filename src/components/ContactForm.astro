@@ -1,0 +1,26 @@
+---
+import {contactEnabled, site} from '../data/site';
+---
+<form id="contact-form" aria-describedby="form-note">
+<label for="name">Nombre</label><input id="name" name="name" required minlength="2" maxlength="100" autocomplete="name" aria-describedby="name-error"/><span id="name-error" class="error"></span>
+<label for="contact">Correo electrónico o teléfono</label><input id="contact" name="contact" required maxlength="254" autocomplete="email" aria-describedby="contact-error"/><span id="contact-error" class="error"></span>
+<label for="message">Cuéntanos brevemente tu asunto</label><textarea id="message" name="message" required minlength="10" maxlength="2000" rows="5" aria-describedby="message-error"></textarea><span id="message-error" class="error"></span>
+<div hidden aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"/></div>
+<p id="form-note" class="small">Esta es una consulta inicial. Evita enviar datos sensibles o detalles confidenciales innecesarios.</p>
+{site.privacyNotice ? <details><summary>Aviso de privacidad</summary><p>{site.privacyNotice}</p></details> : <p class="small">El envío no está habilitado en esta vista previa. El aviso de privacidad está pendiente de aprobación.</p>}
+<button type="submit" disabled={!contactEnabled}>Enviar consulta</button><p id="form-status" role="status" aria-live="polite"></p>
+<noscript>Para enviar el formulario es necesario habilitar JavaScript.</noscript>
+</form>
+<script>
+const form = document.querySelector<HTMLFormElement>('#contact-form')!;
+form.addEventListener('submit', async (event) => {
+ event.preventDefault(); const button=form.querySelector<HTMLButtonElement>('button')!; if(button.disabled)return;
+ const status=document.querySelector('#form-status')!;
+ for(const field of ['name','contact','message']){document.getElementById(field+'-error')!.textContent='';document.getElementById(field)!.removeAttribute('aria-invalid');}
+ button.disabled=true;button.textContent='Enviando…';form.dataset.state='submitting';status.textContent='Enviando consulta…';
+ try {const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(form))),signal:AbortSignal.timeout(15000)}); const data=await response.json();
+ if(!response.ok || !data.ok){if(data.fieldErrors){for(const [field,error] of Object.entries(data.fieldErrors)){const el=document.getElementById(field+'-error');if(el)el.textContent=String(error);document.getElementById(field)?.setAttribute('aria-invalid','true');}form.querySelector<HTMLElement>('[aria-invalid]')?.focus();}throw new Error();}
+ form.reset();form.dataset.state='success';status.textContent='Tu consulta fue enviada. El despacho podrá contactarte por el medio que indicaste.';
+ }catch{form.dataset.state='error';status.textContent='No pudimos enviar tu consulta. Inténtalo de nuevo o utiliza otro medio de contacto disponible.';}finally{button.disabled=false;button.textContent='Enviar consulta';}
+});
+</script>
