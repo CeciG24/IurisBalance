@@ -18,3 +18,6 @@ Verificar visualmente 320, 360, 768 y 1440 px, teclado, zoom 200%, Lighthouse y 
 Actualizados Astro a 7.3.8 y @astrojs/vercel a 11.0.17, con lockfile. `npm run check`: 0 errores, advertencias e indicaciones. `npm run build`: correcto con principal prerenderizada y función Vercel.
 Auditoría en línea posterior: 0 críticos, 7 altos transitivos relacionados con path-to-regexp y zod en el adaptador Vercel. No aplicar audit fix --force: propone retroceder el adaptador a una versión que vuelve a introducir otros avisos. Requiere resolver dependencias del adaptador y repetir auditoría antes de producción. La auditoría offline no sirve para confirmar ausencia de avisos.
 La instalación advierte que undici requiere Node >=22.19.0; actualizar Node a una versión LTS compatible antes de continuar. El build funcionó con el Node actual 22.14, pero eso no elimina el requisito declarado.
+
+## Optimización de imágenes
+Los fondos originales PNG se conservan como fuentes. La web sirve versiones WebP de calidad 80: verde 25,302 bytes y marfil 25,808 bytes, frente a 3,574,000 bytes combinados de los originales (reducción aproximada del 98.6%). Se precarga el fondo principal y el derecho solo en anchos desde 768 px; en móvil el panel derecho sigue oculto. No se aplica carga diferida a imágenes visibles de la hero. No se atribuye una puntuación Lighthouse sin medición.
