@@ -6,7 +6,7 @@ Contenido: src/data/site.ts y services.json. Fuentes: docs/content-sources.md. C
 ## Estado de entrega
 Vista previa, no publicable. POST /api/contact valida origen, tamaño, campos y contenido; nunca simula éxito. Responde 503 para solicitudes válidas hasta implementar el proveedor elegido. El botón permanece deshabilitado. Falta elegir proveedor, configurar remitente autenticado, receptor y secretos de servidor, e implementar protección distribuida (Vercel Firewall o proveedor) antes de activar envíos. No se ha contratado ningún servicio.
 
-Faltan dominio final, contacto confirmado, aviso de privacidad aprobado y revisión editorial de presentación y textos. El aviso debe agregarse a site.ts; sustituir también el enlace del pie al integrar el texto. CONTACT_ENABLED no debe activarse hasta completar integración y prueba de entrega. PUBLICATION_READY controla indexación; SITE_URL configura canonical y sitemap. No activar publicación hasta resolver todos los requisitos del contrato.
+Faltan dominio final, contacto confirmado, aviso de privacidad aprobado y revisión editorial de presentación y textos. El aviso debe agregarse a site.ts; sustituir también el enlace del pie al integrar el texto. CONTACT_ENABLED no debe activarse hasta completar integración y prueba de entrega. Producción de Vercel permite indexación y usa SITE_URL o el dominio de producción informado por Vercel. Las vistas previas bloquean la indexación. Fuera de Vercel, habilitarla con PUBLICATION_READY=true y SITE_URL.
 
 ## Vercel
 Importar repositorio en el proyecto general/contable de Vercel Pro, instalar con npm ci y construir con npm run build. Adaptador oficial incluido. Configurar variables por entorno; mantener Preview con PUBLICATION_READY=false. No hay despliegue realizado ni accesos de Vercel proporcionados. Search Console y Perfil de Empresa requieren sus accesos al publicar.
@@ -21,3 +21,4 @@ La instalación advierte que undici requiere Node >=22.19.0; actualizar Node a u
 
 ## Optimización de imágenes
 Los fondos originales PNG se conservan como fuentes. La web sirve versiones WebP de calidad 80: verde 25,302 bytes y marfil 25,808 bytes, frente a 3,574,000 bytes combinados de los originales (reducción aproximada del 98.6%). Se precarga el fondo principal y el derecho solo en anchos desde 768 px; en móvil el panel derecho sigue oculto. No se aplica carga diferida a imágenes visibles de la hero. No se atribuye una puntuación Lighthouse sin medición.
+
