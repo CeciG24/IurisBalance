@@ -1,0 +1,9 @@
+---
+import { site } from '../data/site';
+const digits = site.contact.whatsappE164?.replace(/\D/g, '');
+---
+{digits && <a class="whatsapp-button button" href={`https://wa.me/${digits}`} target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp, abre en una pestaña nueva">Escribir por WhatsApp <span aria-hidden="true">↗</span></a>}
+
+<style>
+  .whatsapp-button { margin-block: 12px; background: #073018; color: white; }
+</style>
